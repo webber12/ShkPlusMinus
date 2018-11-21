@@ -16,4 +16,4 @@
 // вызывать на странице корзины Shopkeeper [[ShkPlusMinus]]
 // стилизовать кнопки плюс-минус согласно дизайну
  
-$modx->regClientScript("assets/snippets/shopkeeper/js/shk-actions.js");
+$modx->regClientScript("assets/snippets/ShkPlusMinus/js/ShkPlusMinus.js");

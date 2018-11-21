@@ -29,7 +29,7 @@ $(document).ready(function(){
         if (newValue) {
             var data2 = 'action=ShkChangeCount&index=' + index + '&count=' + newValue;
             $.ajax({
-                url: "assets/snippets/shopkeeper/shk-actions.php",
+                url: "assets/snippets/ShkPlusMinus/ajax.php",
                 data: data2,
                 type: "POST",
                 cache: false,
