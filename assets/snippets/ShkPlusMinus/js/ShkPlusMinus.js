@@ -16,7 +16,7 @@ $(document).ready(function(){
         e.preventDefault();
         var act = $(this).data("action");
         var index = $(this).data("index");
-        var field = $(this).closest("div").find("input[name='count']");
+        var field = $(this).parent().find("input[name='count']");
         var newValue = false;
         if (act == 'minus' && field.val() > 1) {
             newValue = parseInt(field.val(), 0) - 1;
