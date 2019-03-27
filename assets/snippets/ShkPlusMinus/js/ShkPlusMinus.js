@@ -9,9 +9,9 @@ function initShkChangeCount() {
 
 if (typeof setCartActionsCallback === "undefined") {
     function setCartActionsCallback() {
-		if ($(document).find('.btn_shk_count').length == 0 ) {
-        	initShkChangeCount();
-		}
+        if ($(document).find('.btn_shk_count').length == 0 ) {
+            initShkChangeCount();
+        }
     }
 }
 
