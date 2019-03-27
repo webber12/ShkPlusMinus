@@ -1,14 +1,23 @@
+function initShkChangeCount() {
+    var index = 0;
+    $(document).find("#shopCart input[name='count']").each(function(){
+        $(this).before("<span class='btn_shk_count btn_shk_count_minus' data-action='minus' data-index='" + index + "'>-</span>");
+        $(this).after("<span class='btn_shk_count btn_shk_count_plus' data-action='plus' data-index='" + index + "'>+</span>");
+        index++;
+    })
+}
+
+if (typeof setCartActionsCallback === "undefined") {
+    function setCartActionsCallback() {
+		if ($(document).find('.btn_shk_count').length == 0 ) {
+        	initShkChangeCount();
+		}
+    }
+}
+
 (function($){
 
 $(document).ready(function(){
-    function initShkChangeCount() {
-        var index = 0;
-        $("#shopCart input[name='count']").each(function(){
-            $(this).before("<span class='btn_shk_count btn_shk_count_minus' data-action='minus' data-index='" + index + "'>-</span>");
-            $(this).after("<span class='btn_shk_count btn_shk_count_plus' data-action='plus' data-index='" + index + "'>+</span>");
-            index++;
-        })
-    }
     
     initShkChangeCount();
     
